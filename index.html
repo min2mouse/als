@@ -62,7 +62,7 @@
                 prediction[i].className + ": " + prediction[i].probability.toFixed(2);
             labelContainer.childNodes[i].innerHTML = classPrediction;
           
-          if(prediction[i].probability.toFixed(2) >= 0.75)
+          if(prediction[i].probability.toFixed(2) >= 0.70)
 	        {
   		      const input = document.getElementById("inputText");
 		        input.value = prediction[i].className;
